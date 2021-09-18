@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 100%;
+}
+.max-width{
+    max-width: 100%;
+    padding: 15px 40px;
+    margin: auto;
+}
+.navbar{
+    width: 100%;
+    background:linear-gradient(to bottom right,teal,rgb(45,200,500));
+    font-family: 'Style Script', cursive;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+.navbar .logo span{
+    color:white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color:white;
+}
+.header{
+    background-color:white;
+    text-align: center;
+    padding: 5vh;
+}
+.header .heading{
+    font-family: 'Style Script', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    animation: animate 2s 1;
+}
+.header .heading span{
+    font-size: 35px;
+    color:teal;
+}
+.header .heading p{
+    font-size: 30px;
+    color:rgb(45,200,500);
+}
+.header .profile{
+    max-width: 40%;
+    margin-left: 30%;
+    margin-right: 25%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.header .profile img{
+    border-radius: 50%;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        color: white;
+    }
+    60%{
+        opacity: 1;
+        letter-spacing: 2px;
+    }
+}
+.section{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Style Script', cursive;
+    background: linear-gradient(to bottom right,teal,rgb(45,200,500));
+}
+.section .tech-list{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.section .tech-list li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    transition: color 0.3s ease;
+}
+.section .tech-list li:hover{
+    color:white;
+}
+.section .tech{
+    display:block;
+    text-align: center;
+    padding: 20px;
+   font-size: 30px;
+   font-weight: 800;
+}
+.section .tech span{
+    color: white;
+}
+.section .links{
+    display: inline-block;
+    text-align: center;
+    max-width: 140px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.primary-button{
+    color: white;
+    background-color: black;
+}
+.secondary-button{
+    color: black;
+    background-color: white;
+    border: black solid;
+}
+.footer{
+    width: 100%;
+    background: linear-gradient(to bottom right,teal,rgb(45,200,500));
+}
+.footer .contacts{
+    text-align: center;
+}
+.footer .contacts li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.footer .contacts li a{
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+.footer .contacts li a:hover{
+    color:white;
+}
+.footer .Connect{
+    display:block;
+    text-align: center;
+    padding-top: 20px;
+   font-size: 30px;
+   font-weight: 700;
+   font-family: 'Style Script', cursive;;
+}
+.footer .Connect span{
+    color: white;
+}
+.emailshow{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
