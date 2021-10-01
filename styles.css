@@ -189,3 +189,26 @@
     top: 50%;
     left: 20%;
 }
+.section .blog-area{
+    padding: 10px 50px;
+    text-align: start;
+    font-weight: 550;
+}
+.highlight{
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+}
+.syntax{
+    color: rgb(150, 55, 38);
+}
+#more1{
+    display:none;
+}
+#more2{
+    display:none;
+}
+.btn{
+    text-align: center;
+    font-family: 'Style Script', cursive;
+}

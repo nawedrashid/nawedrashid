@@ -25,15 +25,87 @@
         </div>
     </header>
     <section class="section">
-        <div class="tech"><span></span></div>
-        <div class="tech-list">
-
+        <div class="tech">Promises in Java<span>Script</span></div>
+        <div class="blog-area">
+            <p>Promise is a JavaScipt Object that simply links consuming and producing codes.It holds the upcoming value of an async operation. Before ES6 callbacks functions were used to handle async tasks which can lead to a callback hell.Promise helps to avoid that.<span id="dots1">......</span></p>
+            <span id="more1">
+                <p>There are three states of Promise.<br>
+                    <span class="highlight">Unresolved - </span>If the result is not ready then the promise is unresolved.<br>
+                    <span class="highlight">Resolved - </span>If the result is ready then the promise is resolved<br>
+                    <span class="highlight">Rejected - </span>If an error occured then promise is rejected<br><br>
+                </p>
+                <h2>Creating a Promise</h2>
+                    <p class="syntax">const myPromise = new Promise(function(myResolve,myReject){<br>
+                        myResolve(); // When Successful<br>
+                        myReject(); //When Error<br>
+                    }); 
+                    </p><br>
+                <p>A new promise is created using Promise constructor. It takes a single argument(a callback), which takes two callbacks, resolve and reject.
+                </p><br><br>
+                <h2>Promise Instance Methods</h2>
+                    <p><span class="highlight">then, catch</span> and <span class="highlight">finally </span>are three main Promise API methods
+                    </p><br>
+                    <p><span class="highlight">Promise then - </span>It notifies when a asynchronous operation is completed, either successful or fail. Multiple promises can be chained together using it.<br>
+                        <p class="syntax">promise.then(Success);<br>
+                            Promise.resolve()<br>
+                            .then(() => console.log('then#1'))<br>
+                            .then(() => console.log('then#2'))<br>
+                            .then(() => console.log('then#3'));
+                        </p>
+                    </p><br>
+                    <p>All promises are resolved and following then are called, so output will be
+                        <p class="syntax">then#1<br>
+                            then#2<br>
+                            then#3<br>
+                        </p>
+                    </p><br>
+                    <p><span class="highlight">Promise catch - </span>It takes a function as an argument that handles error if occured. It is never called if everthing goes well<br>
+                        <p class="syntax">promise.catch(Error);<br>
+                            Promise.resolve()<br>
+                            .then(a)<br>
+                            .catch(console.error)
+                        </p>
+                    </p><br>
+                    <p><span class="highlight">Promise then - </span>It is only called when the promise is resolved. If a piece of code is to be executed after .then and .catch then it is used<br>
+                        <p class="syntax">Promise.resolve()<br>
+                            .then(a)<br>
+                            .then(b)<br>
+                            .catch(console.error)<br>
+                            .finally(() => console.log('always called'))
+                        </p>
+                    </p><br>
+                </span>
+            <div class="btn"><button class="links primary-button btn1">Read More</button></div>
         </div>
     </section>
     <section class="section">
-        <div class="tech"><span></span></div>
-        <div class="tech-list">
-
+        <div class="tech">Manchester United Players <span>blog.</span></div>
+        <div class="blog-area">
+            <p>Manchester United is a football club based in Old Trafford, Manchester, England. It is the biggest football club in England. It is nicknamed "The Red Devils" and was founded in 1878. Here is a player profile for the stars currently playing in the club.<span id="dots2">......</span></p>
+            <span id="more2"><br>
+                <h2>Goal Keeper</h2>
+                <p><span class="highlight">David De Gea - </span>The star goalkeeper of Manchester United is a Spanish International playing since 2011 for the club winning 4 'Playeer of the Year' awards.
+                </p><br>
+                <h2>Centre Back</h2>
+                <p><span class="highlight">Raphael Varane - </span>The star defender of Manchester United is a French International playing since 2021 for the club winning 4 'Champions League' prior to joining United.
+                </p><br>
+                <h2>Full Back</h2>
+                <p><span class="highlight">Luke Shaw - </span>The star left back of Manchester United is an England International playing since 2014 for the club. In 2015 he had a double leg break and took a long time to recover from it. Now he is one of the best left back in the world.
+                </p><br>
+                <h2>Central Midfielder</h2>
+                <p><span class="highlight">Paul Pogba - </span>The star midfielder of Manchester United is a French International playing since 2016 for the club. He like to play box to box and he is the costliest player of the club.
+                </p><br>
+                <h2>Central Attacking Midfielder</h2>
+                <p><span class="highlight">Bruno Fernandes - </span>The star CAM of Manchester United is a Portugese International playing since 2020 for the club winning 1 'Playeer of the Year' award. The is the chief creator and a good goalscorer for the club.
+                </p><br>
+                <h2>Winger</h2>
+                <p><span class="highlight">Marcus Rashford - </span>The star winger of Manchester United is an England International came from the youth setup of the club. He is a very important player for the club and also does various works for children hunger in England.
+                </p><br>
+                <h2>Striker</h2>
+                <p><span class="highlight">Cristiano Ronaldo - </span>The star Striker of Manchester United is a Portugese International. He needs no introduction. He played for the club from 2003-09 in which he won everything and now came back again in 2021 to reach those heights again.
+                </p><br>
+                </span>
+            <div class="btn"><button class="links primary-button btn2">Read More</button></div>
         </div>
     </section>
     <footer class="footer">
@@ -46,5 +118,6 @@
                 <li><a href="https://www.linkedin.com/in/md-nawed-rashid-550bb31b3"><i class="fab fa-linkedin"></i></a></li>
             </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
