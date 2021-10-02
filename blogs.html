@@ -10,30 +10,28 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="max-width">
             <div class="logo">Portf<span>olio.</span></div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Project.html">Project</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
             </ul>
-        </div>
     </nav>
     <header class="header">
         <div class="heading">
             <div>My <span>Blogs</span></div>
         </div>
     </header>
-    <section class="section">
+    <section class="section box">
         <div class="tech">Promises in Java<span>Script</span></div>
         <div class="blog-area">
             <p>Promise is a JavaScipt Object that simply links consuming and producing codes.It holds the upcoming value of an async operation. Before ES6 callbacks functions were used to handle async tasks which can lead to a callback hell.Promise helps to avoid that.<span id="dots1">......</span></p>
             <span id="more1">
-                <p>There are three states of Promise.<br>
-                    <span class="highlight">Unresolved - </span>If the result is not ready then the promise is unresolved.<br>
-                    <span class="highlight">Resolved - </span>If the result is ready then the promise is resolved<br>
-                    <span class="highlight">Rejected - </span>If an error occured then promise is rejected<br><br>
-                </p>
+                <br><h3>There are three states of Promise.</h3><br>
+                    <p> <span class="highlight">Unresolved - </span>If the result is not ready then the promise is unresolved.<br>
+                        <span class="highlight">Resolved - </span>If the result is ready then the promise is resolved<br>
+                        <span class="highlight">Rejected - </span>If an error occured then promise is rejected<br><br>
+                    </p>
                 <h2>Creating a Promise</h2>
                     <p class="syntax">const myPromise = new Promise(function(myResolve,myReject){<br>
                         myResolve(); // When Successful<br>
@@ -48,28 +46,28 @@
                     <p><span class="highlight">Promise then - </span>It notifies when a asynchronous operation is completed, either successful or fail. Multiple promises can be chained together using it.<br>
                         <p class="syntax">promise.then(Success);<br>
                             Promise.resolve()<br>
-                            .then(() => console.log('then#1'))<br>
-                            .then(() => console.log('then#2'))<br>
-                            .then(() => console.log('then#3'));
+                            .then(() => console.log('then1'))<br>
+                            .then(() => console.log('then2'))<br>
+                            .then(() => console.log('then3'));
                         </p>
                     </p><br>
                     <p>All promises are resolved and following then are called, so output will be
-                        <p class="syntax">then#1<br>
-                            then#2<br>
-                            then#3<br>
+                        <p class="syntax">then1<br>
+                            then2<br>
+                            then3<br>
                         </p>
                     </p><br>
                     <p><span class="highlight">Promise catch - </span>It takes a function as an argument that handles error if occured. It is never called if everthing goes well<br>
-                        <p class="syntax">promise.catch(Error);<br>
+                        <p class="syntax">promise.catch(error);<br>
                             Promise.resolve()<br>
-                            .then(a)<br>
+                            .then(z)<br>
                             .catch(console.error)
                         </p>
                     </p><br>
-                    <p><span class="highlight">Promise then - </span>It is only called when the promise is resolved. If a piece of code is to be executed after .then and .catch then it is used<br>
+                    <p><span class="highlight">Promise finally - </span>It is only called when the promise is resolved. If a piece of code is to be executed after .then and .catch then it is used<br>
                         <p class="syntax">Promise.resolve()<br>
-                            .then(a)<br>
-                            .then(b)<br>
+                            .then(x)<br>
+                            .then(y)<br>
                             .catch(console.error)<br>
                             .finally(() => console.log('always called'))
                         </p>
@@ -78,7 +76,7 @@
             <div class="btn"><button class="links primary-button btn1">Read More</button></div>
         </div>
     </section>
-    <section class="section">
+    <section class="section box">
         <div class="tech">Manchester United Players <span>blog.</span></div>
         <div class="blog-area">
             <p>Manchester United is a football club based in Old Trafford, Manchester, England. It is the biggest football club in England. It is nicknamed "The Red Devils" and was founded in 1878. Here is a player profile for the stars currently playing in the club.<span id="dots2">......</span></p>

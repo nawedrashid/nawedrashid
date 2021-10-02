@@ -5,28 +5,27 @@
     text-decoration: none;
     max-width: 100%;
 }
-.max-width{
-    max-width: 100%;
-    padding: 15px 40px;
-    margin: auto;
+body {
+    background: linear-gradient(to bottom right,rgb(45,200,500),teal,rgb(45,200,500));
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Style Script', cursive;
 }
 .navbar{
     width: 100%;
-    background:linear-gradient(to bottom right,teal,rgb(45,200,500));
-    font-family: 'Style Script', cursive;
-}
-.navbar .max-width{
+    padding: 15px 40px;
+    margin: auto;
     display: flex;
     align-items: center;
+    box-shadow: 0px 10px 30px black;
     justify-content: space-between;
+    background: linear-gradient(to bottom right,rgb(45,200,500),teal,rgb(45,200,500));
+    font-family: 'Style Script', cursive;
 }
 .navbar .logo {
     color: black;
     font-size: 30px;
     font-weight: 800;
-}
-.navbar .logo span{
-    color:white;
 }
 .navbar .menu li{
     list-style: none;
@@ -43,7 +42,6 @@
     color:white;
 }
 .header{
-    background-color:white;
     text-align: center;
     padding: 5vh;
 }
@@ -55,11 +53,11 @@
 }
 .header .heading span{
     font-size: 35px;
-    color:teal;
+    color:white
 }
 .header .heading p{
     font-size: 30px;
-    color:rgb(45,200,500);
+    color:white
 }
 .header .profile{
     max-width: 40%;
@@ -81,13 +79,16 @@
         letter-spacing: 2px;
     }
 }
-.section{
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+
+.box {
+    box-shadow: -10px 10px 40px rgb(3 39 39);
+    border-radius: 10px;
+    width: 80%;
     font-family: 'Style Script', cursive;
-    background: linear-gradient(to bottom right,teal,rgb(45,200,500));
+    text-align: center;
+    margin: 30px auto 25px;
+    border: solid teal 0.5px;
+    background: linear-gradient(to bottom right,rgb(45,200,500),teal,rgb(45,200,500));
 }
 .section .tech-list{
     text-align: center;
@@ -113,9 +114,6 @@
     padding: 20px;
    font-size: 30px;
    font-weight: 800;
-}
-.section .tech span{
-    color: white;
 }
 .section .links{
     display: inline-block;
@@ -149,7 +147,8 @@
 }
 .footer{
     width: 100%;
-    background: linear-gradient(to bottom right,teal,rgb(45,200,500));
+    box-shadow: -10px 0px 30px black;
+    background: linear-gradient(to bottom right,rgb(45,200,500),teal,rgb(45,200,500));
 }
 .footer .contacts{
     text-align: center;
@@ -178,17 +177,6 @@
    font-weight: 700;
    font-family: 'Style Script', cursive;;
 }
-.footer .Connect span{
-    color: white;
-}
-.emailshow{
-    font-size: 70px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-}
 .section .blog-area{
     padding: 10px 50px;
     text-align: start;
@@ -202,13 +190,17 @@
 .syntax{
     color: rgb(150, 55, 38);
 }
-#more1{
+#more1, #more2{
     display:none;
-}
-#more2{
-    display:none;
+    color: black;
 }
 .btn{
     text-align: center;
     font-family: 'Style Script', cursive;
+}
+span{
+    color: white;
+}
+#dots1 , #dots2{
+    color: black;
 }
