@@ -1,2 +1,2 @@
- # Hi! Welcome to my Portfolio
- Here you will find all my projects and blogs in a single place.
+ # Hi! Welcome to my Github
+ Here you will find all of my work
